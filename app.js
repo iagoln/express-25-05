@@ -3,7 +3,14 @@ const app = express()
 
 app.get('/usuarios',(req,res)=>{
 
-    return res.send("ola mundo")
+    return res.json({"nome":"iago"})
+})
+app.post('/usuarios',(req,res)=>{
+
+    return res.json({"nome":"João"})
+})
+app.get('/frutas',(req,res)=>{
+    return res.send("pera,uva")
 })
 
 
